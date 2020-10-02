@@ -22,13 +22,19 @@ function generatePassword (){
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
     
-document.getElementById("generate").addEventListener("click", getPasswordCritera)
+var passwordLength = ""; 
+var passwordSymbols = false; 
+var passwordLowercaseLetters = false; 
+var passwordUppercaseLetters = false;
 
+document.getElementById("generate").addEventListener("click", getPasswordCritera)
 function getPasswordCritera(){
+
 alert("Please answer the following criteria questions to generate your password");
-var passwordLength = prompt("Between 8 and 128, please select the length of your password")
-var passwordSymbols = prompt("Would you like to use symbols?")
-var passwordLowercaseLetters = prompt("Would you like to use lower case letters?")
-var passwordUppercastLetters = prompt("Would you like to use upper case letters?")
-}
+passwordLength = parseInt(prompt("Between 8 and 128, please select the length of your password"));
+passwordSymbols = confirm("Would you like to use symbols?");
+passwordLowercaseLetters = confirm("Would you like to use lower case letters?");
+passwordUppercaseLetters = confirm("Would you like to use upper case letters?");
+} 
+ 
 
