@@ -34,21 +34,43 @@ function generatePassword(){
     alert("Number inputted must be between 8 and 128.");
     passwordLength = (prompt("Between 8 and 128, please select the length of your password."));
   }
-
-    passwordSymbols = confirm("Would you like to use symbols?");
     passwordNumbers = confirm("would you like to use numbers?");
+    passwordSymbols = confirm("Would you like to use symbols?");
     passwordLowercaseLetters = confirm("Would you like to use lower case letters?");
     passwordUppercaseLetters = confirm("Would you like to use upper case letters?");
 
 // Criteria check that atleast 1 has been chosen
   while (passwordSymbols === false && passwordNumbers === false && passwordUppercaseLetters === false && passwordUppercaseLetters === false){
     alert("You must choose at least one of the following criteria")
-    passwordSymbols = confirm("Would you like to use symbols?");
     passwordNumbers = confirm("would you like to use numbers?");
+    passwordSymbols = confirm("Would you like to use symbols?");
     passwordLowercaseLetters = confirm("Would you like to use lower case letters?");
     passwordUppercaseLetters = confirm("Would you like to use upper case letters?");
   }
+
+  // Creates one large array to pull from 
+  var criteriaMet = []
+    if (passwordNumbers) {
+      criteriaMet = criteriaMet.concat(numbers)
+    }
+    if (passwordSymbols) {
+      criteriaMet = criteriaMet.concat(symbols)
+    }
+    if (passwordLowercaseLetters) {
+      criteriaMet = criteriaMet.concat(lowercase)
+    }
+    if (passwordUppercaseLetters) {
+      criteriaMet = criteriaMet.concat(uppercase)
+    }
+
+    console.log(criteriaMet)
+
+
+
+
 }
+
+
 
 
 
