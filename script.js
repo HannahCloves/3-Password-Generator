@@ -40,7 +40,7 @@ function generatePassword(){
     passwordUppercaseLetters = confirm("Would you like to use upper case letters?");
 
 // Criteria check that atleast 1 has been chosen
-  while (passwordSymbols === false && passwordNumbers === false && passwordUppercaseLetters === false && passwordUppercaseLetters === false){
+  while (passwordSymbols === false && passwordNumbers === false && passwordLowercaseLetters === false && passwordUppercaseLetters === false){
     alert("You must choose at least one of the following criteria")
     passwordNumbers = confirm("would you like to use numbers?");
     passwordSymbols = confirm("Would you like to use symbols?");
