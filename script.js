@@ -29,13 +29,10 @@ var passwordNumbers = false;
 // Password length check
 function generatePassword(){
   alert("Please answer the following criteria questions to generate your password");
-  var passwordLength = (prompt("Between 8 and 128, please select the length of your password."));
-
-
-  
+    passwordLength = (prompt("Between 8 and 128, please select the length of your password."));
   while(passwordLength <= 7 || passwordLength >= 129) {
     alert("Number inputted must be between 8 and 128.");
-    var passwordLength = (prompt("Between 8 and 128, please select the length of your password."));
+    passwordLength = (prompt("Between 8 and 128, please select the length of your password."));
   }
 
     passwordSymbols = confirm("Would you like to use symbols?");
@@ -43,7 +40,17 @@ function generatePassword(){
     passwordLowercaseLetters = confirm("Would you like to use lower case letters?");
     passwordUppercaseLetters = confirm("Would you like to use upper case letters?");
 
+// Criteria check that atleast 1 has been chosen
+  while (passwordSymbols === false && passwordNumbers === false && passwordUppercaseLetters === false && passwordUppercaseLetters === false){
+    alert("You must choose at least one of the following criteria")
+    passwordSymbols = confirm("Would you like to use symbols?");
+    passwordNumbers = confirm("would you like to use numbers?");
+    passwordLowercaseLetters = confirm("Would you like to use lower case letters?");
+    passwordUppercaseLetters = confirm("Would you like to use upper case letters?");
+  }
 }
+
+
 
 
 
