@@ -15,20 +15,20 @@ Once all criteria has been met, a password will display in the display box.
 
 Initial load up
 
-![MainPage](/Assets/MainPage.png)
+![MainPage](/Assets/MainPage.PNG)
 
 Examples of Prompts
 
-![InitialPrompt](Assets/InitialPrompt.png)
+![InitialPrompt](Assets/InitialPrompt.PNG)
 
 Example of a criteria question
 
-![Criteria](Assets/Criteria1.png)
+![Criteria](Assets/Criteria1.PNG)
 
 Example of an error message
 
-![Error](Assets/Error1.png)
+![Error](Assets/Error1.PNG)
 
 Example of final product
 
-![FinalProduct](Assets/FinalProduct.png)
+![FinalProduct](Assets/FinalProduct.PNG)
