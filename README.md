@@ -13,5 +13,22 @@ Once all criteria has been met, a password will display in the display box.
 
 ## Images
 
-Starting page
+Initial load up
 
+![MainPage](/Assets/MainPage.png)
+
+Examples of Prompts
+
+![InitialPrompt](Assets/InitialPrompt.png)
+
+Example of a criteria question
+
+![Criteria](Assets/Criteria1.png)
+
+Example of an error message
+
+![Error](Assets/Error1.png)
+
+Example of final product
+
+![FinalProduct](Assets/FinalProduct.png)
