@@ -11,5 +11,7 @@ The first prompt asking the user their chosen length of the password, if they se
 Once the length have been validated a series of criteria questions are asked where atleast 1 of the criteria must be "yes". If all 4 are chosen "no" another error message will display with asking them to rechoose atleast 1 criteria. 
 Once all criteria has been met, a password will display in the display box. 
 
+## Images
 
+Starting page
 
